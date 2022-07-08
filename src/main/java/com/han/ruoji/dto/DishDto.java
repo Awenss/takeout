@@ -1,0 +1,17 @@
+package com.han.ruoji.dto;
+
+import com.han.ruoji.entity.Dish;
+import com.han.ruoji.entity.DishFlavor;
+import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
+@Data
+public class DishDto extends Dish {
+
+    private List<DishFlavor> flavors = new ArrayList<>();
+
+    private String categoryName;
+
+    private Integer copies;
+}
